@@ -192,7 +192,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			{
                 //Vector3 v = (m_Animator.deltaPosition * m_MoveSpeedMultiplier) / Time.deltaTime;
                 Vector3 moveForward = transform.forward * m_Animator.GetFloat("motionZ") * Time.deltaTime;
-                Debug.Log(m_Animator.GetCurrentAnimatorClipInfo(0)[0].clip.name);
+                //Debug.Log(m_Animator.GetCurrentAnimatorClipInfo(0)[0].clip.name);
 				Vector3 v = ((m_Animator.deltaPosition+moveForward) * m_MoveSpeedMultiplier) / Time.deltaTime;
 				// we preserve the existing y part of the current velocity.
 				v.y = m_Rigidbody.velocity.y;

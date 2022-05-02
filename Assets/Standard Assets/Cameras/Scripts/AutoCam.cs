@@ -45,6 +45,7 @@ namespace UnityStandardAssets.Cameras
                 {
                     // velocity is high enough, so we'll use the target's velocty
                     targetForward = targetRigidbody.velocity.normalized;
+                    //targetForward = Vector3.zero;
                     targetUp = Vector3.up;
                 }
                 else
